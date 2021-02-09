@@ -6,6 +6,11 @@
     border:solid 1px #000;
 }
 
+/* _____REGOLA PER SUDDIVIDERE UN TESTO IN DUE COLONNE_____
+.newspaper {
+  column-count: 2;
+} */
+
 header{
     background-color: #303e4e;
 }
@@ -20,6 +25,10 @@ header{
 /* ________REGOLE SESSIONE UOMO_____ */
 section.fl-back-green{
     background-color: #58b99d;
+    text-align: center;
+}
+section.fl-back-white{
+    text-align: center;
 }
 
 .fl-title,
@@ -30,12 +39,52 @@ section.fl-back-green{
     text-align: center;
 }
 
-section.fl-back-white{
+/* section.fl-back-white{
     min-height: 300px;
-}
+} */
 
 .fl-title-black,
 .fl-star-black{
     text-align: center;
     background-color: orange;
+}
+
+/* _____REGOLE SESSIONE PORTFOLIO_____ */
+
+.fl-back-purple{
+    background-color: #ad5264;
+    min-height: 100px;
+}
+.fl-back-lightblue{
+    background-color: #4ea2b3;
+    min-height: 100px;
+}
+.fl-back-black{
+    background-color: black;
+    min-height: 100px;
+}
+.fl-back-blue{
+    background-color: #3e8cbc;
+    min-height: 100px;
+}
+.fl-back-violet{
+    background-color: #193bae;
+    min-height: 100px;
+}
+.fl-back-beije{
+    background-color: #c8b3a5;
+    min-height: 100px;
+}
+/* ______REGOLE SESSIONE ABOUT________ */
+.fl-title-white{
+    color: white;
+}
+
+footer.fl-foot-top{
+    background-color: #3f546b;
+    min-height: 150px:
+}
+footer.fl-foot-bottom{
+    background-color: #303e4e;
+    min-height: 150px:
 }
