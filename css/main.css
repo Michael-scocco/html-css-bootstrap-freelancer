@@ -5,16 +5,37 @@
     background-color: red;
     border:solid 1px #000;
 }
-.container-fluid{
+
+header{
     background-color: #303e4e;
 }
-.container-header{
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid black;
+
+.fl-menu-logo{
+    background-color: green;
+}
+.fl-menu-link{
+    background-color: gray;
 }
 
-.section-title{
-    min-height: 600px;
+/* ________REGOLE SESSIONE UOMO_____ */
+section.fl-back-green{
     background-color: #58b99d;
+}
+
+.fl-title,
+.fl-star-white,
+.fl-man-image,
+.fl-name-job{
+    background-color: green;
+    text-align: center;
+}
+
+section.fl-back-white{
+    min-height: 300px;
+}
+
+.fl-title-black,
+.fl-star-black{
+    text-align: center;
+    background-color: orange;
 }
