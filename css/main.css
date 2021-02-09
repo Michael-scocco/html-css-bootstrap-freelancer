@@ -1,0 +1,20 @@
+
+/* debug per framework */
+[class*="col-"]{
+    min-height:100px;
+    background-color: red;
+    border:solid 1px #000;
+}
+.container-fluid{
+    background-color: #303e4e;
+}
+.container-header{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.section-title{
+    min-height: 600px;
+    background-color: #58b99d;
+}
