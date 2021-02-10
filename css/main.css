@@ -2,7 +2,7 @@
 /* debug per framework */
 [class*="col-"]{
     min-height:10px;
-    background-color: red;
+    /* background-color: red; */
     border:solid 1px #000;
 }
 
@@ -33,6 +33,7 @@ nav.navbar {
 section.fl-back-green{
     background-color: #58b99d;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 
@@ -70,7 +71,7 @@ div.fl-div-job{
 /* _____REGOLE SESSIONE PORTFOLIO_____ */
 section.fl-back-white{
     text-align: center;
-    min-height: 300px;
+    padding-bottom: 50px;
 }
 
 .fl-title-black,
@@ -94,9 +95,62 @@ div.fl-div-image{
 }
 
 /* ______REGOLE SESSIONE ABOUT________ */
-.fl-title-white{
+.fl-title-white, .fl-paragrafy, .fl-button, .fl-send-form{
     color: white;
 }
+
+p.fl-paragrafy{
+    column-count: 2;            /*divisore di colonne*/
+    text-align: left;
+}
+
+a.fl-button{
+    line-height: 45px;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid white;
+}
+p.fl-paragrafy{
+    padding-bottom: 50px;
+}
+div.fl-div-button{
+    margin-bottom: 50px;
+}
+img.fl-image-button{
+    height: 15px;
+}
+/* _______SESSIONE CONTACT ME_______ */
+
+form.fl-contact{
+    text-align: left;
+}
+label {
+    display: none;
+}
+input.form-control, textarea.form-control{
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0 0;
+}
+textarea.form-control{
+    padding-bottom: 50px;
+}
+button.fl-send-form{
+    background-color: #58b99d;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: none;
+    box-shadow: none;
+    margin: 10px 0;
+}
+
+
+
+
+
 
 footer.fl-foot-top{
     background-color: #3f546b;
