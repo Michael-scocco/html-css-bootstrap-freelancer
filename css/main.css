@@ -1,8 +1,8 @@
 
 /* debug per framework */
 [class*="col-"]{
-    min-height:100px;
-    background-color: red;
+    /* min-height:100px;
+    background-color: red; */
     border:solid 1px #000;
 }
 
@@ -11,18 +11,33 @@
   column-count: 2;
 } */
 
-header{
+nav.navbar-default{
     background-color: #303e4e;
 }
-
-.fl-menu-logo{
-    background-color: green;
+.navbar-default a.navbar-brand{
+    color:#ffffff;
 }
-.fl-menu-link{
-    background-color: gray;
+.navbar-default .navbar-nav>li>a{
+    color:#ffffff;
+}
+nav.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
 }
 
-/* ________REGOLE SESSIONE UOMO_____ */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+/* @media and all (min-width: 768px){ */
+    .navbar {
+    border-radius: 0;
+}
+}
+
+
+
+/* ________REGOLE SESSIONE UOMO_____ *
 section.fl-back-green{
     background-color: #58b99d;
     text-align: center;
