@@ -1,8 +1,8 @@
 
 /* debug per framework */
 [class*="col-"]{
-    /* min-height:100px;
-    background-color: red; */
+    min-height:10px;
+    background-color: red;
     border:solid 1px #000;
 }
 
@@ -25,26 +25,16 @@ nav.navbar {
     min-height: 50px;
     margin-bottom: 0;
     border: 1px solid transparent;
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-/* @media and all (min-width: 768px){ */
-    .navbar {
     border-radius: 0;
 }
-}
 
 
-
-/* ________REGOLE SESSIONE UOMO_____ *
+/* ________REGOLE SESSIONE UOMO_____  */
 section.fl-back-green{
     background-color: #58b99d;
     text-align: center;
 }
-section.fl-back-white{
-    text-align: center;
-}
+
 
 .fl-title,
 .fl-star-white,
@@ -54,9 +44,34 @@ section.fl-back-white{
     text-align: center;
 }
 
-/* section.fl-back-white{
-    min-height: 300px;
+/* ______REGOLE IMMAGINE____ */
+/* div.fl-man-image{
+    width: 100%;
 } */
+div.fl-man-image img{
+    width: 100%;
+    height: 240px;
+}
+
+h1.fl-title-white{
+    color: white;
+}
+
+/* _____NON CAMBIA COLORE ALL'IMMAGINE DATA____ */ /* ______INSERISCO STELLA NERA_____ */
+div.fl-star-white img, div.fl-star-black img{
+    height: 22px;
+    margin-bottom: 20px;
+}
+
+div.fl-div-job{
+    margin-bottom: 40px;
+}
+
+/* _____REGOLE SESSIONE PORTFOLIO_____ */
+section.fl-back-white{
+    text-align: center;
+    min-height: 300px;
+}
 
 .fl-title-black,
 .fl-star-black{
@@ -64,32 +79,20 @@ section.fl-back-white{
     background-color: orange;
 }
 
-/* _____REGOLE SESSIONE PORTFOLIO_____ */
+img {
+    vertical-align: middle;
+}
 
-.fl-back-purple{
-    background-color: #ad5264;
-    min-height: 100px;
+.fl-back-purple, .fl-back-lightblue, .fl-back-black,
+.fl-back-blue, .fl-back-violet, .fl-back-beije{
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
 }
-.fl-back-lightblue{
-    background-color: #4ea2b3;
-    min-height: 100px;
+div.fl-div-image{
+    padding: 15px 0;
 }
-.fl-back-black{
-    background-color: black;
-    min-height: 100px;
-}
-.fl-back-blue{
-    background-color: #3e8cbc;
-    min-height: 100px;
-}
-.fl-back-violet{
-    background-color: #193bae;
-    min-height: 100px;
-}
-.fl-back-beije{
-    background-color: #c8b3a5;
-    min-height: 100px;
-}
+
 /* ______REGOLE SESSIONE ABOUT________ */
 .fl-title-white{
     color: white;
