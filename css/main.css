@@ -6,11 +6,6 @@
     border:solid 1px #000;
 }
 
-/* _____REGOLA PER SUDDIVIDERE UN TESTO IN DUE COLONNE_____
-.newspaper {
-  column-count: 2;
-} */
-
 nav.navbar-default{
     background-color: #303e4e;
 }
@@ -26,6 +21,12 @@ nav.navbar {
     margin-bottom: 0;
     border: 1px solid transparent;
     border-radius: 0;
+}
+
+/* ________PROVO A DARE L'HOVER_______ */
+
+ul.nav.navbar-nav.navbar-right>li>a:hover{
+    color: green;
 }
 
 
@@ -110,6 +111,11 @@ a.fl-button{
     font-size: 18px;
     padding: 10px;
     border: 1px solid white;
+    text-decoration: none;
+}
+a.fl-button:hover{
+    color: black;
+    background: white;
 }
 p.fl-paragrafy{
     padding-bottom: 50px;
@@ -147,16 +153,75 @@ button.fl-send-form{
     margin: 10px 0;
 }
 
-
-
-
+/* _____REGOLE FOOTER____ */
 
 
 footer.fl-foot-top{
     background-color: #3f546b;
-    min-height: 150px:
 }
 footer.fl-foot-bottom{
     background-color: #303e4e;
-    min-height: 150px:
+    min-height: 100px;
+    position: relative;
+}
+
+footer.fl-foot-top, footer.fl-foot-bottom{
+    text-align: center;
+    color: white;
+}
+
+span.fl-icons{
+    color: white;
+}
+
+div.fl-div-about{
+    padding: 0 65px;
+}
+span>a.fl-span-about{
+    color: green;
+}
+span>a.fl-span-about:hover{
+    text-decoration:underline;
+}
+
+div.fl-Copyright{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+i.far.fa-copyright{
+    font-size: 12px;
+}
+div.col-xs-12.col-md-4.col-lg-4 span > i.fl-icons{
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+div.col-xs-12.col-md-4.col-lg-4 span > i.fl-icons:hover{
+    background-color: white;
+    color: black;
+}
+
+/* _________REGOLE ICONE______ */
+span i.fab.fa-facebook-f{
+    max-height: 50px;
+    max-width: 100%;
+    padding: 14px 20px;
+}
+span i.fab.fa-google-plus-g{
+    max-height: 50px;
+    max-width: 100%;
+    padding: 14px 14px;
+}
+span i.fab.fa-twitter{
+    max-height: 50px;
+    max-width: 100%;
+    padding: 14px 17px;
+}
+span i.fab.fa-linkedin-in{
+    max-height: 50px;
+    max-width: 100%;
+    padding: 14px 18px;
 }
