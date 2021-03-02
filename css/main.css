@@ -3,7 +3,6 @@
 [class*="col-"]{
     min-height:10px;
     /* background-color: red; */
-    border:solid 1px #000;
 }
 
 nav.navbar-default{
@@ -37,13 +36,51 @@ section.fl-back-green{
     margin-bottom: 50px;
 }
 
+/* per before, left:
+(50%(mettilo al 50% del contenitore) - 15px(togli la metà della stella 30x30) - 100px(togli la lunghezza della barra) - 10px(togli la distanza del margine alla stella))
+quando abbiamo i posizionamenti in absolute dobbiamo fare i CALC.
 
+uguale per right
+right:(50% - 15px - 100px - 10px)after         */
 .fl-title,
 .fl-star-white,
 .fl-man-image,
 .fl-name-job{
-    background-color: green;
     text-align: center;
+}
+.fl-star-white{
+    position: relative;
+    text-align: center;
+}
+/* ________________________________________________________________________________
+per far si ke metto in responsive le linee nere vicino alla stella ho due metodi o con ABSOLUTE E FACCIO IL CALC SCRITTO SOPRA.
+IN ALTERNATINVA, metto tutti e tre i blocchi in "DISPLAY-INLINE-BLOCK,
+sia il BEFORE che L'AFTER, la barra la metto in %, perchè volgio che si muove e lei di conseguenza si restringe,
+quando andro a chiudere il viewport (responsive).
+per centrare l'altezza, metto tutti e tre i blocchi in VERTICAL-MIDDLE
+            IMPORTANTISSIMO
+    il vertical middle lo do alla immagine no al blocco, questo è da ricordare "*/
+
+.fl-star-black>img{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fl-star-black::before{
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 8%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.fl-star-black::after{
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 8%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* ______REGOLE IMMAGINE____ */
@@ -55,16 +92,15 @@ div.fl-man-image img{
     height: 240px;
 }
 
-h1.fl-title-white{
-    color: white;
-}
+
 
 /* _____NON CAMBIA COLORE ALL'IMMAGINE DATA____ */ /* ______INSERISCO STELLA NERA_____ */
 div.fl-star-white img, div.fl-star-black img{
     height: 22px;
+}
+div.fl-star-white, div.fl-star-black{
     margin-bottom: 20px;
 }
-
 div.fl-div-job{
     margin-bottom: 40px;
 }
@@ -78,7 +114,6 @@ section.fl-back-white{
 .fl-title-black,
 .fl-star-black{
     text-align: center;
-    background-color: orange;
 }
 
 img {
@@ -91,9 +126,46 @@ img {
     max-width: 100%;
     border-radius: 10px;
 }
-div.fl-div-image{
-    padding: 15px 0;
+.fl-div-image{
+    position: relative;
 }
+
+/* _______creato hover_____ */
+div.fl-hover-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(90, 219, 173, 0.8);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 10px;
+}
+.fl-plus span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: 800;
+    color: white;
+    z-index: 200;
+    display: none;
+}
+
+.fl-div-image:hover .fl-hover-image,
+.fl-div-image:hover .fl-plus span{
+    display: block;
+}
+
+.fl-margin-image{
+    margin-bottom: 15px;
+}
+
+/* div.fl-div-image{
+    padding: 15px 0;
+} */
 
 /* ______REGOLE SESSIONE ABOUT________ */
 .fl-title-white, .fl-paragrafy, .fl-button, .fl-send-form{
